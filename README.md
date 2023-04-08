@@ -1,4 +1,4 @@
-### Will a Customer Accept the Coupon?
+# Will a Customer Accept the Coupon?
 
 **Context**
 
@@ -49,6 +49,72 @@ The attributes of this data set include:
 3. Coupon attributes
     - time before it expires: 2 hours or one day
 
-### Initial Analysis
+## I. Initial Analysis
 
-![alt text](images/plot1_1.png)
+#### 1. What proportion of the total observations chose to accept the coupon?
+
+Coupon acceptance rate is `56.84%`. Accepted coupons are distributed as follows:
+
+<font size='2px' color=gray>(Figure 1.1)</font><br>
+<img src="images/plot1_1.png" alt="Figure 1.1" width="50%" height='50%'>
+
+
+Given the fact that *Coffee House* coupons are the best performers, I will be analyzing them. 
+But let's first analyze *Bar* coupons and see if their performance can be improved. 
+
+## II. Bar coupons analysis
+
+#### 1. What proportion of bar coupons were accepted?
+
+Accepted Bar coupons represent `11.5%` of accepted coupons and `6.5%` of total coupons (accepted or not).
+
+<font size='2px' color=gray>(Figure 2.1)</font><br>
+<img src="images/plot2_1.png" alt="Figure 2.1" width="50%">
+
+#### 2. Identifying drivers behaviour around Bar attendance
+
+**2.1 Scoring System**
+
+To better analyze the behaviour, a scoring system was created based on the following criteria:
+
+<font size='2px' color=gray>(Figure 2.1)</font><br>
+
+| Attendance (per month) | Score Value |
+|------------------------|-------------|
+| never                  | 0           |
+| less than 1            | 1           |
+| between 1 and 3        | 2           |
+| between 4 and 8        | 6           |
+| more than 8            | 9           |
+
+**2.2 Behaviour Analysis**
+
+Bar coupon acceptance is heavily driven by drivers habits.
+The following graph shows how people who score up to a `2` are most likely to accept a coupon.
+Chances of accepting a coupon drops dramatically if the driver scores more.
+Most coupons are rejected by people that never go to bars (which makes perfect sense).
+Seems like the sweet spot is the score between <font color=green>**1 and 2**</font>
+
+<font size='2px' color=gray>(Figure 2.2)</font><br>
+<img src="images/plot7_2.png" alt="Figure 2.2" width="50%">
+
+<font color=green>**Hypothesis:**</font> 
+*Bar coupon acceptance is driven by people that go to bars up to 3 times per month.* 
+
+**2.3 Looking deeper into the Hypothesis**
+
+Created two audiences (Low and High Frequency) based on bar attendance. The definitions are as follows:
+
+- *<font color=gray>Low frequency Audience:</font> those who went to a bar 3 or fewer times a month*
+- *<font color=gray>High frequency Audience:</font> those who went to a bar more than 3 times a month*
+
+When looking at the accepted coupons of these two audiences,
+it's clear that most of the coupons are coming from the *Low frequency Audience*. Which is consistent with the hypothesis.
+
+<font size='2px' color=gray>(Figure 2.3)</font><br>
+<img src="images/plot3_1.png" alt="Figure 2.3" width="50%">
+
+**2.4 Final thoughts on Bar Coupons**
+
+<font color=orange>**Conclusion:**</font>
+*Offer less coupons to people that never go to bars and more to people that go up to 3 times per month.*
