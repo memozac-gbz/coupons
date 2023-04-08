@@ -165,9 +165,10 @@ Given the scoring system above, the analysis reports the following findings:
 <font size='2px' color=gray>(Figure 3.2.3)</font><br>
 <img src="images/plot8_2_2.png" alt="Figure 3.2.3">
 
-*<font color='orange'>Analysis: </font>* *Behaviour is consistent among all 4 passenger profiles.
+$\color{orange}{Analysis}$ : *Behaviour is consistent among all 4 passenger profiles.
 Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `2` is top 1 in 3 out of 4 profiles*
 
 
 
-$\color{green}{test}$ aeh
+$\color{green}{Hypothesis}$ *Attendance frequency is driving coupon acceptance
+(Most likely a score of `2`)*
