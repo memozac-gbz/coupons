@@ -170,4 +170,4 @@ Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `
 
 
 
-$\color{green}{test}$aeh
+$\color{green}{test}$ aeh
