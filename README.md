@@ -170,5 +170,5 @@ Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `
 
 
 
-$\color{green}{Hypothesis}$ *Attendance frequency is driving coupon acceptance
+$\color{green}{Hypothesis}$: *Attendance frequency is driving coupon acceptance
 (Most likely a score of `2`)*
