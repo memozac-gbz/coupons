@@ -31,7 +31,7 @@ The attributes of this data set include:
        than 8
     -  Number of times that he/she goes to a coffee house: 0, less than 1, 1 to 3, 4 to 8 or
        greater than 8
-    -  Number of times that he/she eats at a restaurant with average expense less than \$20 per
+    -  Number of times that he/she eats at a restaurant with average expense less than $20 per
        person: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
     -  Number of times that he/she goes to a bar: 0, less than 1, 1 to 3, 4 to 8 or greater than 8
    
@@ -56,7 +56,7 @@ The attributes of this data set include:
 Coupon acceptance rate is `56.84%`. Accepted coupons are distributed as follows:
 
 <font size='2px' color=gray>(Figure 1.1)</font><br>
-<img src="images/plot1_1.png" alt="Figure 1.1">
+<img src="images/plot1_1.png" alt="Figure 1.1" width="75%">
 
 
 Given the fact that *Coffee House* coupons are the best performers, I will be analyzing them. 
@@ -96,7 +96,7 @@ Most coupons are rejected by people that never go to bars (which makes perfect s
 Seems like the sweet spot is the score between <font color=green>**1 and 2**</font>
 
 <font size='2px' color=gray>(Figure 2.2)</font><br>
-<img src="images/plot7_2.png" alt="Figure 2.2">
+<img src="images/plot7_2.png" alt="Figure 2.2" width="75%">
 
 <font color=green>**Hypothesis:**</font> 
 *Bar coupon acceptance is driven by people that go to bars up to 3 times per month.* 
