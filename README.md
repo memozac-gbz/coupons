@@ -98,7 +98,7 @@ Seems like the sweet spot is the score between <font color=green>*1 and 2*</font
 <font size='2px' color=gray>(Figure 2.2)</font><br>
 <img src="images/plot7_2.png" alt="Figure 2.2" width="75%">
 
-<font color=green>*Hypothesis:*</font> 
+$\color{green}{Hypothesis}$ 
 *Bar coupon acceptance is driven by people that go to bars up to 3 times per month.* 
 
 **2.3 Looking deeper into the Hypothesis**
@@ -116,7 +116,7 @@ it's clear that most of the coupons are coming from the *Low frequency Audience*
 
 **2.4 Final thoughts on Bar Coupons**
 
-<font color=orange>*Conclusion:*</font>
+$\color{red}{Analysis}$
 *Offer less coupons to people that never go to bars and more to people that go up to 3 times per month.*
 
 ## III. Coffee House coupons analysis
@@ -137,7 +137,7 @@ Some behavioural analysis showed some good insights around coffee house attendan
 <font size='2px' color=gray>(Figure 3.2.2)</font><br>
 <img src="images/plot8_2_1.png" alt="Figure 3.2.2">
 
-*<font color='orange'>Analysis: </font>* *Behaviour differs depending on their companionship.
+$\color{orange}{Analysis}$ *Behaviour differs depending on their companionship.
 Alone people likes to grab coffee either very early (7am) or white late (6pm) and skip lunchtime (2pm).
 People hanging out with friends mostly grab coffee around lunchtime (2pm).
 Both profiles are the most likely to accept a coupon when compared to people accompanied by a partner or kid(s)*
@@ -165,10 +165,10 @@ Given the scoring system above, the analysis reports the following findings:
 <font size='2px' color=gray>(Figure 3.2.3)</font><br>
 <img src="images/plot8_2_2.png" alt="Figure 3.2.3">
 
-$\color{orange}{Analysis:}$ *Behaviour is consistent among all 4 passenger profiles.
+$\color{orange}{Analysis}$ *Behaviour is consistent among all 4 passenger profiles.
 Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `2` is top 1 in 3 out of 4 profiles*
 
 
 
-$\color{green}{Hypothesis:}$ *Attendance frequency is driving coupon acceptance
+$\color{green}{Hypothesis}$ *Attendance frequency is driving coupon acceptance
 (Most likely a score of `2`)*
