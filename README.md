@@ -51,4 +51,4 @@ The attributes of this data set include:
 
 ### Initial Analysis
 
-![alt text]('./images/plot1_1.png')
+![alt text]('images/plot1_1.png')
