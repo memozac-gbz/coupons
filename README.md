@@ -12,7 +12,7 @@ The goal of this project is to use what you know about visualizations and probab
 
 **Data**
 
-This data comes to us from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’.  There are five different types of coupons -- less expensive restaurants (under \\$20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
+This data comes to us from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’.  There are five different types of coupons -- less expensive restaurants (under $20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
 
 ### Data Description
 Keep in mind that these values mentioned below are average values.
@@ -69,7 +69,7 @@ Accepted Bar coupons represent `11.5%` of accepted coupons and `6.5%` of total c
 
 <img src="images/plot2_1.png" alt="Figure 2.1">
 
-#### 2. Identifying drivers behaviour around bar attendance
+#### 2. Identifying behaviour around bar attendance
 
 **2.1 Scoring System**
 
@@ -88,14 +88,13 @@ To better analyze the behaviour, a scoring system was created based on the follo
 
 Bar coupon acceptance is heavily driven by drivers habits.
 The following graph shows how people who score up to a `2` are most likely to accept a coupon.
-Chances of accepting a coupon drops dramatically if the driver scores more.
+Chances of accepting a coupon drop if the scores is higher.
 Most coupons are rejected by people that never go to bars (which makes perfect sense).
-Seems like the sweet spot is the score between <font color=green>*1 and 2*</font>
+Seems like the sweet spot is the score between **1 and 2**
 
 <img src="images/plot7_2.png" alt="Figure 2.2" width="75%">
 
-$\color{green}{Hypothesis}$ 
-*Bar coupon acceptance is driven by people that go to bars up to 3 times per month.* 
+$\color{green}{Hypothesis}$`Bar coupon acceptance is driven by people that go to bars up to 3 times per month.` 
 
 **2.3 Looking deeper into the Hypothesis**
 
@@ -112,7 +111,7 @@ it's clear that most of the coupons are coming from the *Low frequency Audience*
 **2.4 Final thoughts on Bar Coupons**
 
 $\color{red}{Conclusion}$
-*Offer less coupons to people that never go to bars and more to people that go up to 3 times per month.*
+**Offer less coupons to people that never go to bars and more to people that go up to 3 times per month.**
 
 ## III. Coffee House coupons analysis
 
@@ -128,12 +127,13 @@ Some behavioural analysis showed some good insights around coffee house attendan
 
 **2.2 Accepted Coffee Coupons, passenger types, and time of day**
 
-<img src="images/plot8_2_1.png" alt="Figure 3.2.2">
+<img src="images/plot8_2_1.png" width="75%">
 
-$\color{orange}{Analysis}$ *Behaviour differs depending on their companionship.
-Alone people likes to grab coffee either very early (7am) or white late (6pm) and skip lunchtime (2pm).
+$\color{orange}{Analysis}$ Behaviour differs depending on their companionship.
+Alone people likes to grab coffee either very early (7am) or quite late (6pm) and skip lunchtime (2pm).
 People hanging out with friends mostly grab coffee around lunchtime (2pm).
-Both profiles are the most likely to accept a coupon when compared to people accompanied by a partner or kid(s)*
+Both profiles are the most likely to accept a coupon when compared to people accompanied by a partner or kid(s)
+
 
 **2.3 Accepted Coffee Coupons, passenger types, and attendance frequency**
 
@@ -155,21 +155,22 @@ Given the scoring system above, the analysis reports the following findings:
 
 <img src="images/plot8_2_2.png">
 
-$\color{orange}{Analysis}$ *Behaviour is consistent among all 4 passenger profiles.
-Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `2` is top 1 in 3 out of 4 profiles*
+$\color{orange}{Analysis}$ Behaviour is consistent among all 4 passenger profiles.
+Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of 2 is top 1 in 3 out of 4 profiles
 
-$\color{green}{Hypothesis}$ *Attendance frequency is driving coupon acceptance
-(Most likely a score of `2`)*
+$\color{green}{Hypothesis}$`Attendance frequency is driving coupon acceptance
+(Most likely a score of 2)`
 
 **2.3.3 Looking deeper into the Hypothesis**
 
 When looking at accepted coupons based on coffee house attendance frequency,
 people with a score of `2` have a good chance of accepting the coupon.
-But also scores of `6` are also looking good when compared to the rejected coupons behaviour.
+But also scores of `6` are also looking good when compared to the rejected coupon behaviour.
 
 <img src="images/plot8_3.png" width="50%">
 
-Investigating further, people with scores of 2 and 6 represent `53.2%` of all accepted coupons.
+Investigating further, people with scores of 2 and 6 represent `53.2%` of all coffee accepted coupons.
+
 <img src="images/plot8_4_2.png">
 
 The hypothesis was in the right track but when comparing with the rejected coupons, was able to identify
@@ -181,4 +182,4 @@ that scores of 6 were also performing good. Scores of `1` where also investigate
 **2.4 Final thoughts on Coffee Coupons**
 
 $\color{red}{Conclusion}$
-*Offer less coupons to people that never go to coffee houses and more to people that go up to 8 times per month.*
+**Offer less coupons to people that never go to coffee houses and more to people that go up to 8 times per month.**
