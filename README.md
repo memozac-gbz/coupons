@@ -55,7 +55,6 @@ The attributes of this data set include:
 
 Coupon acceptance rate is `56.84%`. Accepted coupons are distributed as follows:
 
-<font size='2px' color=gray>(Figure 1.1)</font><br>
 <img src="images/plot1_1.png" alt="Figure 1.1" width="75%">
 
 
@@ -68,7 +67,6 @@ But let's first analyze *Bar* coupons and see if their performance can be improv
 
 Accepted Bar coupons represent `11.5%` of accepted coupons and `6.5%` of total coupons (accepted or not).
 
-<font size='2px' color=gray>(Figure 2.1)</font><br>
 <img src="images/plot2_1.png" alt="Figure 2.1">
 
 #### 2. Identifying drivers behaviour around bar attendance
@@ -77,7 +75,6 @@ Accepted Bar coupons represent `11.5%` of accepted coupons and `6.5%` of total c
 
 To better analyze the behaviour, a scoring system was created based on the following criteria:
 
-<font size='2px' color=gray>(Figure 2.1)</font><br>
 
 | Attendance (per month) | Score Value |
 |------------------------|-------------|
@@ -95,7 +92,6 @@ Chances of accepting a coupon drops dramatically if the driver scores more.
 Most coupons are rejected by people that never go to bars (which makes perfect sense).
 Seems like the sweet spot is the score between <font color=green>*1 and 2*</font>
 
-<font size='2px' color=gray>(Figure 2.2)</font><br>
 <img src="images/plot7_2.png" alt="Figure 2.2" width="75%">
 
 $\color{green}{Hypothesis}$ 
@@ -111,12 +107,11 @@ Created two audiences (Low and High Frequency) based on bar attendance. The defi
 When looking at the accepted coupons of these two audiences,
 it's clear that most of the coupons are coming from the *Low frequency Audience*. Which is consistent with the hypothesis.
 
-<font size='2px' color=gray>(Figure 2.3)</font><br>
 <img src="images/plot3_1.png" alt="Figure 2.3">
 
 **2.4 Final thoughts on Bar Coupons**
 
-$\color{red}{Analysis}$
+$\color{red}{Conclusion}$
 *Offer less coupons to people that never go to bars and more to people that go up to 3 times per month.*
 
 ## III. Coffee House coupons analysis
@@ -125,7 +120,6 @@ $\color{red}{Analysis}$
 
 Accepted Coffee coupons represent `27.7%` of accepted coupons and `15.7%` of total coupons (accepted or not).
 
-<font size='2px' color=gray>(Figure 3.1)</font><br>
 <img src="images/plot8_1.png" alt="Figure 3.1">
 
 #### 2. Identifying passenger profiles around coffee house attendance
@@ -134,7 +128,6 @@ Some behavioural analysis showed some good insights around coffee house attendan
 
 **2.2 Accepted Coffee Coupons, passenger types, and time of day**
 
-<font size='2px' color=gray>(Figure 3.2.2)</font><br>
 <img src="images/plot8_2_1.png" alt="Figure 3.2.2">
 
 $\color{orange}{Analysis}$ *Behaviour differs depending on their companionship.
@@ -148,8 +141,6 @@ Both profiles are the most likely to accept a coupon when compared to people acc
 
 To better analyze attendance behaviour, a scoring system was created based on the following criteria:
 
-<font size='2px' color=gray>(Figure 2.3.1)</font><br>
-
 | Attendance (per month) | Score Value |
 |------------------------|-------------|
 | never                  | 0           |
@@ -162,13 +153,32 @@ To better analyze attendance behaviour, a scoring system was created based on th
 
 Given the scoring system above, the analysis reports the following findings:
 
-<font size='2px' color=gray>(Figure 3.2.3)</font><br>
-<img src="images/plot8_2_2.png" alt="Figure 3.2.3">
+<img src="images/plot8_2_2.png">
 
 $\color{orange}{Analysis}$ *Behaviour is consistent among all 4 passenger profiles.
 Scores of 1, 2, and 6 are in the top 3 performers across the board. A score of `2` is top 1 in 3 out of 4 profiles*
 
-
-
 $\color{green}{Hypothesis}$ *Attendance frequency is driving coupon acceptance
 (Most likely a score of `2`)*
+
+**2.3.3 Looking deeper into the Hypothesis**
+
+When looking at accepted coupons based on coffee house attendance frequency,
+people with a score of `2` have a good chance of accepting the coupon.
+But also scores of `6` are also looking good when compared to the rejected coupons behaviour.
+
+<img src="images/plot8_3.png" width="50%">
+
+Investigating further, people with scores of 2 and 6 represent `53.2%` of all accepted coupons.
+<img src="images/plot8_4_2.png">
+
+The hypothesis was in the right track but when comparing with the rejected coupons, was able to identify
+that scores of 6 were also performing good. Scores of `1` where also investigated but turn out to have a
+`51.8%` rejection rate. As it's shown below, scores of `2-6` represent `66.1%` of all accepted coffee coupons.
+
+<img src="images/plot8_4_1.png">
+
+**2.4 Final thoughts on Coffee Coupons**
+
+$\color{red}{Conclusion}$
+*Offer less coupons to people that never go to coffee houses and more to people that go up to 8 times per month.*
